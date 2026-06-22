@@ -99,7 +99,7 @@ export const LoggingCallbacksTable: React.FC<LoggingCallbacksProps> = ({
       width: 200,
     },
     {
-      title: <span className="font-medium text-gray-700">Access</span>,
+      title: <span className="font-medium text-gray-700">Scope</span>,
       key: "access",
       render: (_: unknown, record: CallbackRow) =>
         isDestination(record) ? (
@@ -118,7 +118,7 @@ export const LoggingCallbacksTable: React.FC<LoggingCallbacksProps> = ({
           <div className="flex justify-end gap-2">
             <TableIconActionButton
               variant="Edit"
-              tooltipText="Edit access"
+              tooltipText="Edit scope"
               dataTestId="edit-access"
               onClick={() => onEditAccess(record)}
             />

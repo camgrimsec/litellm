@@ -55,7 +55,7 @@ const EditLoggingCredentialModal: React.FC<EditLoggingCredentialModalProps> = ({
 
   return (
     <Modal
-      title={`Edit access${credentialName ? ` — ${credentialName}` : ""}`}
+      title={`Edit scope${credentialName ? ` — ${credentialName}` : ""}`}
       open={open}
       onCancel={onClose}
       onOk={handleSave}
